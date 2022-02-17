@@ -1,0 +1,7 @@
+sources:
+  "1.0":
+    url: "https://github.com/raspberrypi/hats/archive/refs/tags/1.0.tar.gz"
+    sha256: "c323de40e08a79b120c3295fce2e46de839cdf59d8d92fcb3f13c048bd2de3a4"
+  "1.0-next":
+    url: "https://www.github.com/raspberrypi/hats/archive/e75af349d672961e1c1ea921372820085e2980d9.tar.gz"
+    sha256: "127939f538e421a6bbe4007053b1bf17c6bab1f9a1fe9ea3d526865694baccb7"
