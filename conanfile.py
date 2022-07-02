@@ -10,7 +10,6 @@ class RpiEepromutilsConan(ConanFile):
     description = "Utilities to create, flash and dump HAT EEPROM images"
     topics = ("EEPROM", "RPi")
     settings = "os", "compiler", "build_type", "arch"
-    generators = "cmake"
 
     @property
     def _source_dir(self):
