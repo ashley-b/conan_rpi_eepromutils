@@ -10,9 +10,22 @@ Which is a collection of tools for writing, reading and flashing raspberry pi HA
 * eepdump
 * eepflash.sh
 
+## Build and package
+
+The following command will build and publish the Conan package to the local system cache:
+
+```
+conan create . 1.0-next@
+```
+
 ## Useage
 
-Example conanfile.txt for consumers
+### Standalone
+```
+conan install -g virtualrunenv rpi_eepromutils/1.0-next@
+```
+**OR**
+### Example conanfile.txt for consumers
 ```
 [build_requires]
 rpi_eepromutils/1.0-next
@@ -20,8 +33,7 @@ rpi_eepromutils/1.0-next
 [generators]
 virtualrunenv
 ```
-
-Example commands
+### Running commands directly
 ```sh
 $ source activate_run.sh
 $ sudo eepflash.sh -d=0 -t=24c256 -w -f=hat.eep
